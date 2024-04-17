@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+  margin: 20px auto;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 40px;
+
+  color: #0071F6;
+  background-color: #FFFFFF;
+  border: 1px solid #E3E7EA;
+  box-shadow: 1px 1px 2px #E2E5E9;
+  z-index: 2;
+
+  cursor: pointer;
+}
+
+.page.active {
+  background-color: #E1E6F6;
+}
+
+.page:hover {
+  color: #FFFFFF;
+  background-color: #0071F6;
+
+  path {
+    stroke: #FFFFFF;
+  }
+}
+
+.page:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page:last-child {
+  border-radius: 0 5px 5px 0;
+}
